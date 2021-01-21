@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body id="chat-screen">
+
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>00:36</span>
+        </div>
+        <div class="status-bar__column">
+            <span>97%</span>
+            <i class="fas fa-battery-full fa-lg" ></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+        
+        <script type="text/javascript" language="javascript">
+            const back = () =>{
+                history.go(-1);
+            }
+        </script>
+
+    <header class="chat-header">
+        <div class="chat-header__column">
+            <a href="#" onclick="back();"><i class="fas fa-angle-left fa-3x"></i></a>
+        </div>
+        <div class="chat-header__column">
+            <span class="chat-header__title">Chat</span>
+        </div>
+        <div class="chat-header__column">
+            <a href=""><i class="fas fa-search fa-2x"></i></a>
+            <a href=""><i class="fas fa-bars fa-2x"></i></a>
+        </div>
+    </header>
+
+    <main class="main-screen main-chat">
+        
+        <div class="chat__timestamp">
+            <span>Tuesday, June 30, 2020</span>
+        </div>
+        
+        <div class="message-row">
+            <img src="assets/images/fox.jpg">
+            <div class="message-row__content">
+                <span class="message__author">가을</span>
+                <div class="message__info">
+                    <span class="message__bubble">가을</span>
+                    <span class="message__time">21:27</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="message-row message-row--own">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message__bubble">아님</span>
+                    <span class="message__time">21:27</span>
+                </div>
+            </div>
+        </div>
+    </main>
+        
+    <form class="reply">
+        <div class="reply__column">
+            <i class="far fa-plus-square"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="write message"/>
+            <i class="far fa-smile-wink"></i>
+            <button>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>    
+
+    <script
+        src="https://kit.fontawesome.com/6478f529f2.js"
+        crossorigin="anonymous"
+></script>
+</body>
+</html>
